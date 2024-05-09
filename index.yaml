@@ -3,6 +3,16 @@ entries:
   mongo-chart:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2024-05-09T10:57:05.830617666Z"
+    description: A Helm chart for Mongo DB docker image
+    digest: 867cdcab66458c2fac5c1f5f07645ed529e9924ddb048e907405557cc94e1fc1
+    name: mongo-chart
+    type: application
+    urls:
+    - https://github.com/senghor/charts/releases/download/mongo-chart-0.1.2/mongo-chart-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2024-05-09T10:40:45.04374664Z"
     description: A Helm chart for Kubernetes
     digest: 6af1c438a572c84da76fddf934fa14ba391606b64ee25b653aff5306549c56f6
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/senghor/charts/releases/download/mongo-chart-0.1.1/mongo-chart-0.1.1.tgz
     version: 0.1.1
-generated: "2024-05-09T10:40:45.043753012Z"
+generated: "2024-05-09T10:57:05.830654235Z"
