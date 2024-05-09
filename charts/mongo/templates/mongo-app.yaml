@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-deployment
+  labels:
+  {{- include "mongo-chart.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.deployment.replicas }}
+  selector:
+    matchLabels:
+      app: mongo
+    {{- include "mongo-chart.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: mongo
+      {{- include "mongo-chart.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ quote .Values.kubernetesClusterDomain }}
+        image: {{ .Values.deployment.mongo.image.repository }}:{{ .Values.deployment.mongo.image.tag
+          | default .Chart.AppVersion }}
+        name: mongo
+        ports:
+        - containerPort: 27017
+        resources: {{- toYaml .Values.deployment.mongo.resources | nindent 10 }}

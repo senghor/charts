@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-config
+  labels:
+  {{- include "mongo-chart.labels" . | nindent 4 }}
+data:
+  mongo-server: {{ .Values.config.mongoServer | quote }}
+  mongo-url: {{ .Values.config.mongoUrl | quote }}

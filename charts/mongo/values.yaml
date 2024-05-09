@@ -1,0 +1,22 @@
+config:
+  mongoServer: mongo-service.mern.svc.cluster.local
+  mongoUrl: mongodb://admin:pass@mongo-service.default.svc.cluster.local:27017/express?ssl=false
+deployment:
+  mongo:
+    image:
+      repository: mongo
+      tag: latest
+    resources:
+      limits:
+        cpu: 600m
+        memory: 250Mi
+  replicas: 1
+kubernetesClusterDomain: cluster.local
+secret:
+  mongoPassword: cGFzcwo=
+  mongoUser: YWRtaW4K
+service:
+  ports:
+  - port: 27017
+    targetPort: 27017
+  type: ClusterIP
