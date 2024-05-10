@@ -24,6 +24,20 @@ entries:
   mongo-express:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2024-05-10T14:28:47.74424584Z"
+    dependencies:
+    - name: mongo-chart
+      repository: https://senghor.github.io/charts
+      version: 0.1.2
+    description: A Helm chart for mongo-express
+    digest: 01706865c6b3bf02afcaf3d7958897abf2f2f895c8fe1c8ad3efb335bfaf3889
+    name: mongo-express
+    type: application
+    urls:
+    - https://github.com/senghor/charts/releases/download/mongo-express-0.1.2/mongo-express-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2024-05-10T13:38:46.629242252Z"
     dependencies:
     - name: mongo-chart
@@ -50,4 +64,4 @@ entries:
     urls:
     - https://github.com/senghor/charts/releases/download/mongo-express-0.1.0/mongo-express-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-10T13:38:46.629254164Z"
+generated: "2024-05-10T14:28:47.744259515Z"
