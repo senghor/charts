@@ -3,6 +3,16 @@ entries:
   mongo-chart:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2024-05-10T16:30:23.289660697Z"
+    description: A Helm chart for Mongo DB docker image
+    digest: 198bc467005dbd65b67c43479f9d4073faa3ed79bbc4b4300131e65e570b7a04
+    name: mongo-chart
+    type: application
+    urls:
+    - https://github.com/senghor/charts/releases/download/mongo-chart-0.1.3/mongo-chart-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2024-05-09T10:57:05.830617666Z"
     description: A Helm chart for Mongo DB docker image
     digest: 867cdcab66458c2fac5c1f5f07645ed529e9924ddb048e907405557cc94e1fc1
@@ -22,6 +32,20 @@ entries:
     - https://github.com/senghor/charts/releases/download/mongo-chart-0.1.1/mongo-chart-0.1.1.tgz
     version: 0.1.1
   mongo-express:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-05-10T16:30:23.498525391Z"
+    dependencies:
+    - name: mongo-chart
+      repository: https://senghor.github.io/charts
+      version: 0.1.2
+    description: A Helm chart for mongo-express
+    digest: 2e99326eaf0087d68161f30a51b77f3174d285ca6354950c4ce70def610be133
+    name: mongo-express
+    type: application
+    urls:
+    - https://github.com/senghor/charts/releases/download/mongo-express-0.1.3/mongo-express-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.0
     created: "2024-05-10T14:28:47.74424584Z"
@@ -64,4 +88,4 @@ entries:
     urls:
     - https://github.com/senghor/charts/releases/download/mongo-express-0.1.0/mongo-express-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-10T14:28:47.744259515Z"
+generated: "2024-05-10T16:30:23.498577609Z"
