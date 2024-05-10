@@ -1,5 +1,5 @@
 config:
-  mongoServer: mongo-service.mern.svc.cluster.local
+  mongoServer: mongo-service.default.svc.cluster.local
   mongoUrl: mongodb://admin:pass@mongo-service.default.svc.cluster.local:27017/express?ssl=false
 deployment:
   mongo:
