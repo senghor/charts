@@ -1,0 +1,6 @@
+dependencies:
+- name: mongo-chart
+  repository: https://senghor.github.io/charts
+  version: 0.1.2
+digest: sha256:6c4535d6ea9f7b6a10df2b8647bd6ee1a1bcedf9b6f6e02dd021766bf9f698f6
+generated: "2024-05-10T15:13:30.754436975+03:00"
