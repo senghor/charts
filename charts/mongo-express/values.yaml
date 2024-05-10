@@ -1,0 +1,17 @@
+deployment:
+  mongoExpress:
+    image:
+      repository: mongo-express
+      tag: latest
+    resources:
+      limits:
+        cpu: 300m
+        memory: 128Mi
+  replicas: 1
+kubernetesClusterDomain: cluster.local
+service:
+  ports:
+  - nodePort: 30100
+    port: 80
+    targetPort: 8081
+  type: NodePort
