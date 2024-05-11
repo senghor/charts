@@ -1,0 +1,6 @@
+1. Authentication
+    username: admin
+    password: pass
+
+2. Access
+    go to http://<worker-node-ip>:30100
